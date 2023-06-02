@@ -1,14 +1,16 @@
 {
-  "name": "useintersect-and-scrollcontrols",
+  "homepage": "https://github.com/casparbaron/l4",
+  "name": "l4",
   "version": "1.0.0",
-  "description": "Combining useIntersect with scrollcontrols.",
+  "description": "We design your website tomorrow!",
+  "private": true,
   "keywords": [
-    "vertical",
-    "useintersect",
-    "intersection",
-    "scrollcontrols"
+    "design",
+    "website",
+    "architecture",
+    "portfolio"
   ],
-  "main": "src/index.js",
+
   "dependencies": {
     "@pmndrs/branding": "0.0.8",
     "@react-three/drei": "9.1.4",
