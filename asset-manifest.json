@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/casparbaron/l4/static/css/main.ba79f4d7.css",
+    "main.js": "/casparbaron/l4/static/js/main.d0fa8fc7.js",
+    "static/media/logo.png": "/casparbaron/l4/static/media/logo.9ed5e1fa77721bfac507.png",
+    "index.html": "/casparbaron/l4/index.html",
+    "main.ba79f4d7.css.map": "/casparbaron/l4/static/css/main.ba79f4d7.css.map",
+    "main.d0fa8fc7.js.map": "/casparbaron/l4/static/js/main.d0fa8fc7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ba79f4d7.css",
+    "static/js/main.d0fa8fc7.js"
+  ]
+}
