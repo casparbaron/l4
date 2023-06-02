@@ -9,6 +9,13 @@
   box-sizing: border-box;
 }
 
+#blue { color: #7A9FBF; }
+#yellow { color: #F2E205; }
+#yellow2 { color: #F2B705; }
+#orange { color: #F28705; }
+#red { color: #BF2604; }
+
+
 html,
 body,
 #root {
@@ -21,9 +28,10 @@ body,
 body {
   overscroll-behavior: none;
   background: #f0f0f0;
-  color: black;
+  color: #BF2604;
   font-family: 'Inter var', sans-serif;
   font-feature-settings: 'cv06' 1;
+  opacity: 0.8;
 }
 
 h1 {
@@ -37,10 +45,47 @@ h1 {
 
 a {
   pointer-events: all;
-  color: black;
   text-decoration: none;
 }
 
 svg {
   fill: black;
+}
+
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Elemente umbrechen, wenn sie nicht in eine Zeile passen */
+}
+
+.card {
+  /*background-color: #d5d5d5;*/
+  border-radius: 10px;
+  margin: 0 10px 20px; /* Hinzugefügter Abstand zwischen den Karten */
+  padding: 20px;
+  width: 45%;
+  min-width: 100px;
+  min-height: 100px;
+  align-items: center;
+  
+}
+
+.card:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  transition: 1s;
+  opacity: 1;
+}
+
+.card-title {
+  font-size: 4vw;
+  margin-bottom: 40px;
+  line-height: 100%;
+  
+}
+
+.card-content {
+  font-size: 3vw;
+  line-height: 100%;
 }

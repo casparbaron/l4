@@ -2,6 +2,7 @@ import * as THREE from 'three'
 import { useRef, useState } from 'react'
 import { Canvas, useFrame, useThree } from '@react-three/fiber'
 import { useIntersect, Image, ScrollControls, Scroll } from '@react-three/drei'
+import  Skills  from './skills'
 
 function Item({ url, scale, ...props }) {
   const visible = useRef(false)
@@ -32,7 +33,7 @@ function Items() {
       <Item url="/6.png" scale={[w / 3, w / 3, 1]} position={[-w / 4, -h * 2, 0]} />
       <Item url="/7.png" scale={[w / 3, w / 5, 1]} position={[-w / 4, -h * 2.6, 0]} />
       <Item url="/8.png" scale={[w / 2, w / 2, 1]} position={[w / 4, -h * 3.1, 0]} />
-      <Item url="/12.png" scale={[w / 2.5, w / 2, 1]} position={[-w / 6, -h * 4.1, 0]} />
+      <Item url="/10.png" scale={[w / 3, w / 3, 1]} position={[-w / 5, -h * 3.5, 0]} />
     </Scroll>
   )
 }
@@ -40,17 +41,18 @@ function Items() {
 export const App = () => (
   <Canvas orthographic camera={{ zoom: 80 }} gl={{ alpha: false, antialias: false, stencil: false, depth: false }} dpr={[1, 1.5]}>
     <color attach="background" args={['#f0f0f0']} />
-    <ScrollControls damping={6} pages={5}>
+    <ScrollControls damping={6} pages={6}>
       <Items />
       <Scroll html style={{ width: '100%' }}>
         <h1 style={{ position: 'absolute', top: `100vh`, right: '20vw', fontSize: '25em', transform: `translate3d(0,-100%,0)` }}>we</h1>
         <h1 style={{ position: 'absolute', top: '180vh', left: '10vw' }}>design</h1>
-        <h1 style={{ position: 'absolute', top: '260vh', right: '10vw' }}>your</h1>
-        <h1 style={{ position: 'absolute', top: '350vh', left: '10vw' }}>website</h1>
-        <h1 style={{ position: 'absolute', top: '450vh', right: '10vw' }}>
-          tomorrow
-          
-        </h1>
+        <h1 style={{ position: 'absolute', top: '260vh', right: '10vw'}}>your</h1>
+        <h1 style={{ position: 'absolute', top: '350vh', left: '10vw'}}>website</h1>
+        
+          <span style={{ position: 'absolute', top: '450vh', right: '0vw' }}>
+            <Skills/>
+          </span>
+        
       </Scroll>
     </ScrollControls>
   </Canvas>
