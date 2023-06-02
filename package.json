@@ -10,7 +10,6 @@
     "architecture",
     "portfolio"
   ],
-
   "dependencies": {
     "@pmndrs/branding": "0.0.8",
     "@react-three/drei": "9.1.4",
@@ -24,9 +23,14 @@
     "three": "0.139.2",
     "valtio": "1.5.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
+  },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+  
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
