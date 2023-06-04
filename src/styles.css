@@ -61,7 +61,7 @@ svg {
 
 /* Habe hier mal den Inline-Stil übernommen */
 .navbar {
-  position: fixed;
+  position: absolute;
   width: 100%;
   height: 100px;
 }

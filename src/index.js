@@ -4,17 +4,20 @@ import Logo from './logo.png'
 import './styles.css'
 import { App } from './App'
 import  Skills  from './skills'
+import  PopupComponent  from './widget'
 
 function Overlay() {
   return (
-    <div style={{ position: 'absolute', top: 0, left: 0, pointerEvents: 'none', width: '100%', height: '120px', }}>
-      <a style={{ position: 'absolute', top: 40, left: 90, fontSize: '13px' }}>
+    <div className='navbar'>
+      <a className='navbar-title'>
         lfour
         <br />
         berlin creative agency
+        <PopupComponent/> 
       </a>
-      <div style={{ position: 'absolute', top: 40, right: 40, fontSize: '13px' }}>
-        get in contact</div>
+      <a className='navbar-button'>
+        test
+       </a>
     </div>
   )
 }
