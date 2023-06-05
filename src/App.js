@@ -3,6 +3,12 @@ import { useRef, useState } from 'react'
 import { Canvas, useFrame, useThree } from '@react-three/fiber'
 import { useIntersect, Image, ScrollControls, Scroll } from '@react-three/drei'
 import  Skills  from './skills'
+import  Scriptnavbar  from './script-navbar'
+import  Footer  from './footer'
+import { size } from 'lodash-es'
+
+
+
 
 function Item({ url, scale, ...props }) {
   const visible = useRef(false)
@@ -31,9 +37,9 @@ function Items() {
       <Item url="/4.png" scale={[w / 5, w / 5, 1]} position={[w / 4, -h * 1.2, 0]} />
       <Item url="/5.png" scale={[w / 5, w / 5, 1]} position={[w / 10, -h * 1.75, 0]} />
       <Item url="/6.png" scale={[w / 3, w / 3, 1]} position={[-w / 4, -h * 2, 0]} />
-      <Item url="/7.png" scale={[w / 3, w / 5, 1]} position={[-w / 4, -h * 2.6, 0]} />
-      <Item url="/8.png" scale={[w / 2, w / 2, 1]} position={[w / 4, -h * 3.1, 0]} />
-      <Item url="/10.png" scale={[w / 3, w / 3, 1]} position={[-w / 5, -h * 3.5, 0]} />
+   
+      <Item url="/8.png" scale={[w / 2, w / 2, 1]} position={[w / 4, -h * 3.0, 0]} />
+      <Item url="/10.png" scale={[w / 3, w / 3, 1]} position={[-w / 5, -h * 3.3, 0]} />
     </Scroll>
   )
 }
@@ -41,19 +47,28 @@ function Items() {
 export const App = () => (
   <Canvas orthographic camera={{ zoom: 80 }} gl={{ alpha: false, antialias: false, stencil: false, depth: false }} dpr={[1, 1.5]}>
     <color attach="background" args={['#f0f0f0']} />
-    <ScrollControls damping={6} pages={6}>
+
+    <ScrollControls damping={5} pages={5}>
       <Items />
       <Scroll html style={{ width: '100%' }}>
-        <h1 style={{ position: 'absolute', top: `100vh`, right: '20vw', fontSize: '25em', transform: `translate3d(0,-100%,0)` }}>we</h1>
-        <h1 style={{ position: 'absolute', top: '180vh', left: '10vw' }}>design</h1>
-        <h1 style={{ position: 'absolute', top: '260vh', right: '10vw'}}>your</h1>
-        <h1 style={{ position: 'absolute', top: '350vh', left: '10vw'}}>website</h1>
         
-          <span style={{ position: 'absolute', top: '450vh', right: '0vw' }}>
+        <h1 style={{ position: 'absolute', top: `50vh`, right: '5vw', transform: `translate3d(0,-100%,0)` }}>wir</h1>
+        <h1 style={{ position: 'absolute', top: '180vh', left: '5vw' }}>bauen</h1>
+        <h1 style={{ position: 'absolute', top: '260vh', right: '5vw'}}>dein</h1>
+        <h1 style={{ position: 'absolute', top: '300vh', left: '5vw'}}>portfolio</h1>
+        <h1 style={{ position: 'absolute', top: '410vh', right: '0vw'}}>Unser Angebot</h1>
+
+    
+          <span style={{ position: 'absolute', top: '440vh', left: '0vw'}}>
             <Skills/>
+
           </span>
-        
+          
+          <Scriptnavbar/>
+          
       </Scroll>
+      
     </ScrollControls>
   </Canvas>
+  
 )

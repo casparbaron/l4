@@ -1,4 +1,3 @@
-import React from 'react';
 import { PopupWidget } from 'react-calendly';
 
 const PopupComponent = () => {
