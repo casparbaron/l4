@@ -4,7 +4,7 @@ import * as THREE from 'three'
 import { useRef, useState } from 'react'
 import { Canvas, useFrame, useThree } from '@react-three/fiber'
 import { useIntersect, Image, ScrollControls, Scroll } from '@react-three/drei'
-
+import React, { useEffect } from 'react';
 import  Scriptnavbar  from './script-navbar'
 import  Footer  from './footer'
 import  Skills  from './skills'
@@ -49,11 +49,37 @@ function Items() {
   )
 }
 
-export const App = () => (
-  <Canvas orthographic camera={{ zoom: 80 }} gl={{ alpha: false, antialias: false, stencil: false, depth: false }} dpr={[1, 1.5]}>
-    <color attach="background" args={['#f0f0f0']} />
-  
-    <ScrollControls damping={5} pages={5.6}>
+
+
+export const App = () => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  let pages;
+  if (windowWidth < 600) {
+    pages = 7;
+  } else if (windowWidth < 900) {
+    pages = 6.5;
+  } else {
+    pages = 5.6;
+  }
+
+  return (
+    <Canvas orthographic camera={{ zoom: 80 }} gl={{ alpha: false, antialias: false, stencil: false, depth: false }} dpr={[1, 1.5]}>
+      <color attach="background" args={['#f0f0f0']} />
+
+      <ScrollControls damping={5} pages={pages}>
       <Items />
       <Scroll html style={{ width: '100%' }}>
         
@@ -76,4 +102,10 @@ export const App = () => (
     </ScrollControls>
   </Canvas>
   
-)
+  );
+};
+
+
+
+
+
