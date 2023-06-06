@@ -11,8 +11,6 @@ import  Skills  from './skills'
 
 
 
-
-
 function Item({ url, scale, ...props }) {
   const visible = useRef(false)
   const [hovered, hover] = useState(false)
@@ -50,7 +48,7 @@ function Items() {
       <Item url="/10.png" scale={[w / 3, w / 3, 1]} position={[-w / 5, -h * 3.3, 0]} />
       <Item url="/11.png" scale={[w / 2, w / 5, 1]} position={[-w / 5, -h * 4.6, 0]} />
       <Item url="/12.png" scale={[2, w / 3, 1]} position={[w / 3, -h* 4.7, 1]} />
-      <Item url="/7.png" scale={[-w / 3.5, w / 3, 1]} position={[-w / 6, -h* 5, 0]} />
+      
     </Scroll>
   )
 }
@@ -59,7 +57,7 @@ export const App = () => (
   <Canvas orthographic camera={{ zoom: 80 }} gl={{ alpha: false, antialias: false, stencil: false, depth: false }} dpr={[1, 1.5]}>
     <color attach="background" args={['#f0f0f0']} />
 
-    <ScrollControls damping={5} pages={5.5}>
+    <ScrollControls damping={5} pages={5.6}>
       <Items />
       <Scroll html style={{ width: '100%' }}>
         
