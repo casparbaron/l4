@@ -52,7 +52,7 @@ function Items() {
 export const App = () => (
   <Canvas orthographic camera={{ zoom: 80 }} gl={{ alpha: false, antialias: false, stencil: false, depth: false }} dpr={[1, 1.5]}>
     <color attach="background" args={['#f0f0f0']} />
-
+  
     <ScrollControls damping={5} pages={5.6}>
       <Items />
       <Scroll html style={{ width: '100%' }}>

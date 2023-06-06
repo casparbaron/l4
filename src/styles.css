@@ -76,6 +76,8 @@ svg {
   
 }
 
+
+
 .card:hover {
 
   opacity: 1;
@@ -101,6 +103,25 @@ svg {
 .card-content {
   font-size: 3vw;
   line-height: 100%;
+}
+
+@media (max-width: 700px){
+  
+  .card {
+    width: 95%;
+  }
+  .card-title {
+    font-size: 6vw;
+    
+    
+  }
+  
+  .card-content {
+    font-size: 5vw;
+   
+  }
+
+
 }
 
 #navbar {
