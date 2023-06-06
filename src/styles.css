@@ -104,31 +104,38 @@ svg {
   line-height: 100%;
 }
 
-@media (max-width: 1200px){
-  
+@media (max-height: 900px){
   .card {
     width: 93%;
-    margin: 0; 
-    
-    
+    margin: 0;  
   }
-
-
   .card-title {
     font-size: 4.5vw;
     margin-bottom: 10px;
-    
-    
   }
-  
   .card-content {
-    font-size: 3.5vw;
+    font-size: 4.5vw;
     margin-bottom: 0px;
-   
   }
-
 
 }
+
+@media (max-width: 1200px){
+  .card {
+    width: 93%;
+      
+  }
+  .card-title {
+    font-size: 5vw;
+    
+  }
+  .card-content {
+    font-size: 4vw;
+    
+  }
+
+}
+
 
 #navbar {
   position: fixed; /* Make it stick/fixed */

@@ -52,11 +52,11 @@ function Items() {
 
 
 export const App = () => {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [windowHeight, setWindowHeight] = useState(window.innerHeight);
 
   useEffect(() => {
     const handleResize = () => {
-      setWindowWidth(window.innerWidth);
+      setWindowHeight(window.innerHeight);
     };
 
     window.addEventListener('resize', handleResize);
@@ -67,13 +67,14 @@ export const App = () => {
   }, []);
 
   let pages;
-  if (windowWidth < 800) {
+  if (windowHeight < 800) {
     pages = 5.5;
-  } else if (windowWidth < 1200) {
+  } else if (windowHeight < 1200) {
     pages = 5.3;
   } else {
     pages = 5.1;
   }
+
 
   return (
     <Canvas orthographic camera={{ zoom: 80 }} gl={{ alpha: false, antialias: false, stencil: false, depth: false }} dpr={[1, 1.5]}>
