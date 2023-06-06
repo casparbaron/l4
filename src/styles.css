@@ -104,7 +104,7 @@ svg {
   line-height: 100%;
 }
 
-@media (max-height: 900px){
+@media (max-height: 1000px){
   .card {
     width: 93%;
     margin: 0;  
