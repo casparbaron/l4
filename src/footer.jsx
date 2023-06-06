@@ -41,8 +41,8 @@ const Footer = () => {
                   <p>Max Mustermann (Geschäftsführer)</p>
                   <p>Kontakt:</p><br/>
                   <p>Telefon: 0123456789</p><br/>
-                  <p>E-Mail: info@lfourwebagentur.de</p>
-                  <p>Website: www.lfourwebagentur.de</p><br/>
+                  <p>E-Mail: team@lfour.de</p>
+                  <p>Website:www.lfour.de</p><br/>
                   <p>Umsatzsteuer-Identifikationsnummer gemäß §27a Umsatzsteuergesetz:</p>
                   <p>DE123456789</p>
 

@@ -25,4 +25,4 @@ const image = [
   }
 ];
 
-export default image;
+export default image; 

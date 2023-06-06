@@ -8,20 +8,15 @@ import  PopupComponent  from './widget'
 
 
 
-
 createRoot(document.getElementById('root')).render(
   <>
     <Suspense fallback={null}>
-      <App />
-      
-    
+      <App />    
     </Suspense>
-    <PopupComponent/>
-    
-   
-  
 
-    
+    <PopupComponent/>
+    <img src={Logo} style={{ position: 'absolute', top: 40, left: 40, width: 30 }} />
+
    <Footer/>
     
   </>
