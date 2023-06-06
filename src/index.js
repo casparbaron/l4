@@ -5,7 +5,7 @@ import './styles.css'
 import { App } from './App'
 import  Footer  from './footer'
 import  PopupComponent  from './widget'
-import { Helmet } from 'react-helmet';
+
 
 
 const meta = {
@@ -29,7 +29,7 @@ createRoot(document.getElementById('root')).render(
 
     <PopupComponent/>
     <img src={Logo} style={{ position: 'absolute', top: 40, left: 40, width: 30 }} />
-
+    
    <Footer/>
     
   </>

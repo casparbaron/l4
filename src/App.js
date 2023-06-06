@@ -2,9 +2,10 @@ import * as THREE from 'three'
 import { useRef, useState } from 'react'
 import { Canvas, useFrame, useThree } from '@react-three/fiber'
 import { useIntersect, Image, ScrollControls, Scroll } from '@react-three/drei'
-import  Skills  from './skills'
+
 import  Scriptnavbar  from './script-navbar'
 import  Footer  from './footer'
+import  Skills  from './skills'
 
 
 
@@ -53,7 +54,7 @@ export const App = () => (
   <Canvas orthographic camera={{ zoom: 80 }} gl={{ alpha: false, antialias: false, stencil: false, depth: false }} dpr={[1, 1.5]}>
     <color attach="background" args={['#f0f0f0']} />
 
-    <ScrollControls damping={5} pages={6}>
+    <ScrollControls damping={5} pages={window.innerHeight / 170}>
       <Items />
       <Scroll html style={{ width: '100%' }}>
         
@@ -65,8 +66,8 @@ export const App = () => (
 
     
           <span style={{ position: 'absolute', top: '440vh', left: '0vw'}}>
-            <Skills/>
-
+            
+          <Skills/>
           </span>
           
           <Scriptnavbar/>
