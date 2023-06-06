@@ -68,11 +68,11 @@ export const App = () => {
 
   let pages;
   if (windowWidth < 800) {
-    pages = 6.5;
+    pages = 5.5;
   } else if (windowWidth < 1200) {
-    pages = 6.0;
+    pages = 5.3;
   } else {
-    pages = 5.2;
+    pages = 5.1;
   }
 
   return (
@@ -87,7 +87,7 @@ export const App = () => {
         <h1 style={{ position: 'absolute', top: '180vh', left: '5vw' }}>bauen</h1>
         <h1 style={{ position: 'absolute', top: '260vh', right: '5vw'}}>dein</h1>
         <h1 style={{ position: 'absolute', top: '300vh', left: '5vw'}}>portfolio</h1>
-        <h1 style={{ position: 'absolute', top: '390vh', right: '0vw'}}>Unser Angebot</h1>
+        <h1 style={{ position: 'absolute', top: '385vh', right: '0vw'}}>Unser Angebot</h1>
 
     
           <span style={{ position: 'absolute', top: '410vh', left: '0vw'}}>
