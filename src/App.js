@@ -5,7 +5,7 @@ import { useIntersect, Image, ScrollControls, Scroll } from '@react-three/drei'
 import  Skills  from './skills'
 import  Scriptnavbar  from './script-navbar'
 import  Footer  from './footer'
-import { size } from 'lodash-es'
+
 
 
 
