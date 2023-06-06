@@ -68,14 +68,26 @@ svg {
   min-width: 100px;
   min-height: 100px;
   align-items: center;
+
+  transition: 0.5s all ease 0s;
+    -webkit-transition: 0.5s all ease 0s;
+    -moz-transition: 0.5s all ease 0s;
+    -ms-transition: 0.5s all ease 0s;
   
 }
 
 .card:hover {
-  transform: scale(1.05);
-  cursor: pointer;
-  transition: 1s;
   opacity: 1;
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transform: scale(1.05);
+  transition: 0.5s all ease 0s;
+  -webkit-transition: 0.5s all ease 0s;
+  -moz-transition: 0.5s all ease 0s;
+  -ms-transition: 0.5s all ease 0s;
+
 }
 
 .card-title {
@@ -113,16 +125,16 @@ svg {
 
 .footer {
   position: fixed;
-  left: 50;
   padding: 20px 0; 
   bottom: 0;
-  
+  left: 50;
   font-size: 14px;
-  text-align: center; 
+ 
 }
 
 .footer-content {
   display: flex;
+  margin: 0 20px;
   
 }
 

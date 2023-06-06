@@ -5,11 +5,24 @@ import './styles.css'
 import { App } from './App'
 import  Footer  from './footer'
 import  PopupComponent  from './widget'
+import { Helmet } from 'react-helmet';
 
 
+const meta = {
+  title: 'Some Meta Title',
+  description: 'I am a description, and I can create multiple tags',
+  canonical: 'http://example.com/path/to/page',
+  meta: {
+      charset: 'utf-8',
+      name: {
+          keywords: 'react,meta,document,html,tags'
+      }
+  }
+}
 
 createRoot(document.getElementById('root')).render(
   <>
+    
     <Suspense fallback={null}>
       <App />    
     </Suspense>

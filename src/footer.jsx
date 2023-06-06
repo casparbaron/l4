@@ -31,8 +31,8 @@ const Footer = () => {
           <div className="popup-content">
             {isImpressumOpen && (
               <div className="popup-section">
-                <h2>Impressum</h2>
                 <div className="scrollable-content">
+                <h2>Impressum</h2>
                   <p>Angaben gemäß § 5 TMG:</p><br/>
                   <p>lfour Agentur</p>
                   <p>Musterstraße 123</p>
@@ -54,8 +54,8 @@ const Footer = () => {
 
             {isDisclaimerOpen && (
               <div className="popup-section">
-                <h2>Disclaimer</h2>
                 <div className="scrollable-content">
+                  <h2>Disclaimer</h2>
                   
                     
 
