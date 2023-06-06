@@ -21,12 +21,10 @@ function Scriptnavbar() {
          <br />
          Berliner Kreativagentur
        </a>
-       <span style={{ position: 'absolute', top: 40, right: 40, fontSize: '13px' }}>get in contact</span>
+       {/* <span style={{ position: 'absolute', top: 40, right: 40, fontSize: '13px' }}>get in contact</span> */}
      </span>
-    
+  
 
     );
 }
-
-
 export default Scriptnavbar;
