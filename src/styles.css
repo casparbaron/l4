@@ -92,14 +92,14 @@ svg {
 }
 
 .card-title {
-  font-size: 3vw;
+  font-size: 4vw;
   margin-bottom: 40px;
   line-height: 100%;
   
 }
 
 .card-content {
-  font-size: 2vw;
+  font-size: 3vw;
   line-height: 100%;
 }
 
@@ -166,7 +166,7 @@ svg {
 .popup-content {
   background-color: #fff;
   padding: 20px;
-  max-width: 40%;
+  max-width: 60%;
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   overflow: auto;
