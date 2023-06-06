@@ -41,9 +41,9 @@ function Items() {
       <Item url="/6.png" scale={[w / 3, w / 3, 1]} position={[-w / 4, -h * 2, 0]} />
    
       <Item url="/8.png" scale={[w / 2, w / 2, 1]} position={[w / 4, -h * 3.0, 0]} />
-      <Item url="/10.png" scale={[w / 3, w / 3, 1]} position={[-w / 5, -h * 3.3, 0]} />
-      <Item url="/11.png" scale={[w / 2, w / 5, 1]} position={[-w / 5, -h * 4.6, 0]} />
-      <Item url="/12.png" scale={[2, w / 3, 1]} position={[w / 3, -h* 4.7, 1]} />
+      <Item url="/10.png" scale={[w / 3, w / 3, 1]} position={[-w / 5, -h * 3.6, 0]} />
+      <Item url="/11.png" scale={[w / 2, w / 5, 1]} position={[-w / 5, -h * 5.1, 0]} />
+      <Item url="/12.png" scale={[2, w / 3, 1]} position={[w / 3, -h* 5, 1]} />
       
     </Scroll>
   )
