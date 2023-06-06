@@ -1,6 +1,29 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+
 
 const Footer = () => {
+  const [offset, setOffset] = useState(0);
+
+  function updateOffset() {
+    const bottomOffset = Math.max(0, document.documentElement.scrollHeight - window.innerHeight - window.scrollY);
+    setOffset(bottomOffset);
+  }
+
+  useEffect(() => {
+    window.addEventListener("scroll", updateOffset);
+    return () => {
+      window.removeEventListener("scroll", updateOffset);
+    };
+  });
+
+  window.onscroll = function () {
+    if (offset < 20) {
+      document.getElementById("footer").style.bottom = "0";
+    } else {
+      document.getElementById("footer").style.bottom = "100px";
+    }
+  };
+
   const [isImpressumOpen, setIsImpressumOpen] = useState(false);
   const [isDisclaimerOpen, setIsDisclaimerOpen] = useState(false);
 
@@ -18,11 +41,13 @@ const Footer = () => {
   };
 
   return (
-    <footer className="footer">
+    <footer id='footer'>
       <div className="footer-content">
         <div className="footer-links">
           <a href="#" onClick={handleImpressumToggle}>Impressum</a>
           <a href="#" onClick={handleDisclaimerToggle}>Disclaimer</a>
+
+
         </div>
       </div>
 
@@ -33,6 +58,8 @@ const Footer = () => {
               <div className="popup-section">
                 <div className="scrollable-content">
                 <h2>Impressum</h2>
+
+                
                   <p>Angaben gemäß § 5 TMG:</p><br/>
                   <p>lfour Agentur</p>
                   <p>Musterstraße 123</p>

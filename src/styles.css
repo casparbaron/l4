@@ -158,17 +158,16 @@ svg {
 }
 
 
-.footer {
-  position: fixed;
+#footer {
   padding: 20px 0; 
-  bottom: 0;
-  left: 50;
+  position: absolute;
   font-size: 14px;
- 
+  bottom:-100px;
+  display: block;
 }
 
+
 .footer-content {
-  display: flex;
   margin: 0 20px;
   
 }

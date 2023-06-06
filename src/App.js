@@ -68,11 +68,11 @@ export const App = () => {
 
   let pages;
   if (windowHeight < 500) {
-    pages = 7.5;
+    pages = 7.6;
   } else if (windowHeight < 900) {
     pages = 6;
   } else if (windowHeight < 1200) {
-    pages = 5.5;
+    pages = 5.6;
   } else if (windowHeight < 2000) {
     pages = 5.3;
   } else {
