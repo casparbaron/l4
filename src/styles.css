@@ -73,7 +73,6 @@ svg {
     -webkit-transition: 0.5s all ease 0s;
     -moz-transition: 0.5s all ease 0s;
     -ms-transition: 0.5s all ease 0s;
-  
 }
 
 
@@ -105,19 +104,26 @@ svg {
   line-height: 100%;
 }
 
-@media (max-width: 700px){
+@media (max-width: 1200){
   
   .card {
-    width: 95%;
+    width: 93%;
+    margin: 0; 
+    
+    
   }
+
+
   .card-title {
-    font-size: 6vw;
+    font-size: 5vw;
+    margin-bottom: 10px;
     
     
   }
   
   .card-content {
-    font-size: 5vw;
+    font-size: 4vw;
+    margin-bottom: 0px;
    
   }
 

@@ -41,7 +41,7 @@ function Items() {
       <Item url="/6.png" scale={[w / 3, w / 3, 1]} position={[-w / 4, -h * 2, 0]} />
    
       <Item url="/8.png" scale={[w / 2, w / 2, 1]} position={[w / 4, -h * 3.0, 0]} />
-      <Item url="/10.png" scale={[w / 3, w / 3, 1]} position={[-w / 5, -h * 3.6, 0]} />
+      <Item url="/10.png" scale={[w / 3, w / 3, 1]} position={[-w / 5, -h * 3.0, 0]} />
       <Item url="/11.png" scale={[w / 2, w / 5, 1]} position={[-w / 5, -h * 5.1, 0]} />
       <Item url="/12.png" scale={[2, w / 3, 1]} position={[w / 3, -h* 5, 1]} />
       
@@ -67,19 +67,19 @@ export const App = () => {
   }, []);
 
   let pages;
-  if (windowWidth < 600) {
-    pages = 7;
-  } else if (windowWidth < 900) {
+  if (windowWidth < 800) {
     pages = 6.5;
+  } else if (windowWidth < 1200) {
+    pages = 6.0;
   } else {
-    pages = 5.6;
+    pages = 5.2;
   }
 
   return (
     <Canvas orthographic camera={{ zoom: 80 }} gl={{ alpha: false, antialias: false, stencil: false, depth: false }} dpr={[1, 1.5]}>
       <color attach="background" args={['#f0f0f0']} />
 
-      <ScrollControls damping={6} pages={pages}>
+      <ScrollControls damping={5} pages={pages}>
       <Items />
       <Scroll html style={{ width: '100%' }}>
         
@@ -87,10 +87,10 @@ export const App = () => {
         <h1 style={{ position: 'absolute', top: '180vh', left: '5vw' }}>bauen</h1>
         <h1 style={{ position: 'absolute', top: '260vh', right: '5vw'}}>dein</h1>
         <h1 style={{ position: 'absolute', top: '300vh', left: '5vw'}}>portfolio</h1>
-        <h1 style={{ position: 'absolute', top: '410vh', right: '0vw'}}>Unser Angebot</h1>
+        <h1 style={{ position: 'absolute', top: '390vh', right: '0vw'}}>Unser Angebot</h1>
 
     
-          <span style={{ position: 'absolute', top: '440vh', left: '0vw'}}>
+          <span style={{ position: 'absolute', top: '410vh', left: '0vw'}}>
             
           <Skills/>
           </span>
