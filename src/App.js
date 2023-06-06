@@ -29,10 +29,6 @@ function Item({ url, scale, ...props }) {
 }
 
 
-
-
-
-
 function Items() {
   const { width: w, height: h } = useThree((state) => state.viewport)
   return (
