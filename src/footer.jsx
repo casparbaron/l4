@@ -45,7 +45,7 @@ const Footer = () => {
       <div className="footer-content">
         <div className="footer-links">
           <a href="#" onClick={handleImpressumToggle}>Impressum</a>
-          <a href="#" onClick={handleDisclaimerToggle}>Disclaimer</a>
+          <a href="#" onClick={handleDisclaimerToggle}>Disclaimer </a>
 
 
         </div>
@@ -59,21 +59,17 @@ const Footer = () => {
                 <div className="scrollable-content">
                 <h2>Impressum</h2>
 
-                
                   <p>Angaben gemäß § 5 TMG:</p><br/>
-                  <p>lfour Agentur</p>
-                  <p>Musterstraße 123</p>
-                  <p>12345 Musterstadt</p><br/>
-                  <p>Vertreten durch:</p>
-                  <p>Max Mustermann (Geschäftsführer)</p>
-                  <p>Kontakt:</p><br/>
-                  <p>Telefon: 0123456789</p><br/>
-                  <p>E-Mail: team@lfour.de</p>
-                  <p>Website:www.lfour.de</p><br/>
-                  <p>Umsatzsteuer-Identifikationsnummer gemäß §27a Umsatzsteuergesetz:</p>
-                  <p>DE123456789</p>
-
-                    
+                  <p>Caspar Baron</p>
+                  <p>Koppenstrasse 20</p>
+                  <p>10243 Berlin</p><br/>
+                 
+                  
+                  <p>Kontakt:</p>
+                  
+                  <a id='orange' href='mailto:team@lfour.de'>team@lfour.de</a><br/>
+                  
+                
                   
                 </div>
               </div>
@@ -83,8 +79,7 @@ const Footer = () => {
               <div className="popup-section">
                 <div className="scrollable-content">
                   <h2>Disclaimer</h2>
-                  
-                    
+                
 
                     Haftung für Inhalte:<br/><br/>
                     Die Inhalte unserer Website wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.

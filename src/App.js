@@ -33,7 +33,7 @@ function Items() {
   const { width: w, height: h } = useThree((state) => state.viewport)
   return (
     <Scroll>
-      <Item url="/1.png" scale={[w / 3, w / 3, 1]} position={[-w / 6, 0, 0]} />
+      <Item url="/1.png" scale={[w / 3, w / 3, 1]} position={[-w / 6, 0, 0]}/>
       <Item url="/2.png" scale={[2, w / 3, 1]} position={[w / 30, -h, 0]} />
       <Item url="/3.png" scale={[w / 3, w / 5, 1]} position={[-w / 4, -h * 1, 0]} />
       <Item url="/4.png" scale={[w / 5, w / 5, 1]} position={[w / 4, -h * 1.2, 0]} />
@@ -81,23 +81,25 @@ export const App = () => {
 
 
   return (
-    <Canvas orthographic camera={{ zoom: 80 }} gl={{ alpha: false, antialias: false, stencil: false, depth: false }} dpr={[1, 1.5]}>
+    <Canvas  orthographic camera={{ zoom: 80 }} gl={{ alpha: false, antialias: false, stencil: false, depth: false }} dpr={[1, 1.5]}>
       <color attach="background" args={['#f0f0f0']} />
 
       <ScrollControls damping={5} pages={pages}>
       <Items />
-      <Scroll html style={{ width: '100%' }}>
+      <Scroll  html style={{ width: '100%' }}>
         
         <h1 style={{ position: 'absolute', top: `50vh`, right: '5vw', transform: `translate3d(0,-100%,0)` }}>wir</h1>
         <h1 style={{ position: 'absolute', top: '180vh', left: '5vw' }}>bauen</h1>
         <h1 style={{ position: 'absolute', top: '260vh', right: '5vw'}}>dein</h1>
         <h1 style={{ position: 'absolute', top: '300vh', left: '5vw'}}>portfolio</h1>
         <h1 style={{ position: 'absolute', top: '385vh', right: '0vw'}}>Unser Angebot</h1>
+        
 
     
           <span style={{ position: 'absolute', top: '410vh', left: '0vw'}}>
             
           <Skills/>
+          
           </span>
           
           <Scriptnavbar/>
