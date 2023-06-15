@@ -1,5 +1,3 @@
-
-
 import * as THREE from 'three'
 import { useRef, useState } from 'react'
 import { Canvas, useFrame, useThree } from '@react-three/fiber'
@@ -8,6 +6,11 @@ import React, { useEffect } from 'react';
 import  Scriptnavbar  from './script-navbar'
 import  Footer  from './footer'
 import  Skills  from './skills'
+
+
+
+
+
 
 
 
@@ -81,34 +84,48 @@ export const App = () => {
 
 
   return (
-    <Canvas  orthographic camera={{ zoom: 80 }} gl={{ alpha: false, antialias: false, stencil: false, depth: false }} dpr={[1, 1.5]}>
+    
+    
+    <><Canvas orthographic camera={{ zoom: 80 }} gl={{ alpha: false, antialias: false, stencil: false, depth: false }} dpr={[1, 1.5]}>
+
       <color attach="background" args={['#f0f0f0']} />
 
       <ScrollControls damping={5} pages={pages}>
-      <Items />
-      <Scroll  html style={{ width: '100%' }}>
-        
-        <h1 style={{ position: 'absolute', top: `50vh`, right: '5vw', transform: `translate3d(0,-100%,0)` }}>wir</h1>
-        <h1 style={{ position: 'absolute', top: '180vh', left: '5vw' }}>bauen</h1>
-        <h1 style={{ position: 'absolute', top: '260vh', right: '5vw'}}>dein</h1>
-        <h1 style={{ position: 'absolute', top: '300vh', left: '5vw'}}>portfolio</h1>
-        <h1 style={{ position: 'absolute', top: '385vh', right: '0vw'}}>Unser Angebot</h1>
-        
 
-    
-          <span style={{ position: 'absolute', top: '410vh', left: '0vw'}}>
-            
-          <Skills/>
+        <Items />
+        <Scroll html style={{ width: '100%' }}>
+
+
+          <h1 style={{ position: 'absolute', top: `50vh`, right: '5vw', transform: `translate3d(0,-100%,0)` }}>wir</h1>
+          <h1 style={{ position: 'absolute', top: '180vh', left: '5vw' }}>bauen</h1>
+          <h1 style={{ position: 'absolute', top: '260vh', right: '5vw' }}>dein</h1>
+          <h1 style={{ position: 'absolute', top: '300vh', left: '5vw' }}>portfolio</h1>
+          <h1 style={{ position: 'absolute', top: '385vh', right: '0vw' }}>Unser Angebot</h1>
+
+
+
+          <span style={{ position: 'absolute', top: '410vh', left: '0vw' }}>
+
+            <Skills />
+
+
+            <div>
+
+
+            </div>
+
           
           </span>
+
+          <Scriptnavbar />
           
-          <Scriptnavbar/>
-          
-      </Scroll>
+
+        </Scroll>
+
+      </ScrollControls>
       
-    </ScrollControls>
-  </Canvas>
-  
+
+    </Canvas></>
   );
 };
 

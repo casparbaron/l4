@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
+  
 
 const Footer = () => {
   const [offset, setOffset] = useState(0);
@@ -40,13 +40,19 @@ const Footer = () => {
     setIsDisclaimerOpen(false);
   };
 
+
+
+
+
   return (
     <footer id='footer'>
       <div className="footer-content">
         <div className="footer-links">
           <a href="#" onClick={handleImpressumToggle}>Impressum</a>
           <a href="#" onClick={handleDisclaimerToggle}>Disclaimer </a>
-
+          
+          
+      
 
         </div>
       </div>
