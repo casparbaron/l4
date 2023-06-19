@@ -11,9 +11,6 @@ import  Skills  from './skills'
 
 
 
-
-
-
 function Item({ url, scale, ...props }) {
   const visible = useRef(false)
   const [hovered, hover] = useState(false)
@@ -119,7 +116,6 @@ export const App = () => {
 
           <Scriptnavbar />
           
-
         </Scroll>
 
       </ScrollControls>
