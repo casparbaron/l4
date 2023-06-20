@@ -1,15 +1,10 @@
 import React, { useState } from 'react';
-import './styles.css';
 import image from './image';
 import Card from './card';
-import Scriptnavbar from './script-navbar';
 
-export default function Skills() {
-  const [selectedLanguage, setSelectedLanguage] = useState('DE');
-  console.log(selectedLanguage);
+export default function Skills({selectedLanguage, setSelectedLanguage}) {
   return (
     <div>
-      
       <div className="card-container">
         {image.map((imageItem) => (
           <Card
