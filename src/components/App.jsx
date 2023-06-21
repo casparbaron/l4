@@ -80,11 +80,11 @@ export const App = () => {
         selectedLanguage={selectedLanguage}
         setSelectedLanguage={setSelectedLanguage}
       />
-          <h1 style={{ position: 'absolute', top: `50vh`, right: '5vw', transform: `translate3d(0,-100%,0)` }}>{selectedLanguage === "DE" ? "wir" : "we"}</h1>
-          <h1 style={{ position: 'absolute', top: '180vh', left: '5vw' }}>{selectedLanguage === "DE" ? "bauen" : "build"}</h1>
-          <h1 style={{ position: 'absolute', top: '260vh', right: '5vw' }}>{selectedLanguage === "DE" ? "dein" : "your"}</h1>
+          <h1 style={{ position: 'absolute', top: `50vh`, right: '5vw', transform: `translate3d(0,-100%,0)` }}>{selectedLanguage === "ENG" ? "wir" : "we"}</h1>
+          <h1 style={{ position: 'absolute', top: '180vh', left: '5vw' }}>{selectedLanguage === "ENG" ? "bauen" : "build"}</h1>
+          <h1 style={{ position: 'absolute', top: '260vh', right: '5vw' }}>{selectedLanguage === "ENG" ? "dein" : "your"}</h1>
           <h1 style={{ position: 'absolute', top: '300vh', left: '5vw' }}>portfolio</h1>
-          <h1 style={{ position: 'absolute', top: '385vh', right: '0vw' }}>{selectedLanguage === "DE" ? "Unser Angebot" : "Our Offer"}</h1>
+          <h1 style={{ position: 'absolute', top: '385vh', right: '5vw' }}>{selectedLanguage === "ENG" ? "Unser Angebot" : "our offer"}</h1>
           <span style={{ position: 'absolute', top: '410vh', left: '0vw' }}>
           <Skills
         selectedLanguage={selectedLanguage}

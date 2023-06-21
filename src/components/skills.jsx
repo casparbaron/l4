@@ -9,8 +9,8 @@ export default function Skills({selectedLanguage, setSelectedLanguage}) {
         {image.map((imageItem) => (
           <Card
             key={imageItem.key}
-            title={selectedLanguage === "DE" ? imageItem.titleDe : imageItem.titleEng}
-            content={selectedLanguage === "DE" ? imageItem.contentDe : imageItem.contentEng}
+            title={selectedLanguage === "ENG" ? imageItem.titleDe : imageItem.titleEng}
+            content={selectedLanguage === "ENG" ? imageItem.contentDe : imageItem.contentEng}
           />
         ))}
       </div>

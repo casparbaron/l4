@@ -6,7 +6,7 @@ export default function Navbar({ selectedLanguage, setSelectedLanguage }) {
       }
     
       return (
-        <button onClick={changeLanguage}>
+        <button className='languagebutton' onClick={changeLanguage}>
           {selectedLanguage}
         </button>
       );
